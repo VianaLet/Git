@@ -2,7 +2,7 @@
 
 Repositório para armazenar resumos sobre Git e GitHub do curso de Versionamento de código
 
-touch nome.extensão  # aqui é para criar um novo arquivo dentro da pasta onde o gitbash foi aberto
+<br>
 
 ## 📚 Documentação
 - [Documentação GitHub](https://docs.github.com/pt/get-started/writing-on-github)
@@ -16,7 +16,7 @@ touch nome.extensão  # aqui é para criar um novo arquivo dentro da pasta onde 
 | Aulas | Resumos |
 | ----- | ------- |
 |Gravando Alterações no Repositório Local | [Resumo](Resumos/Aula01.md) |
-|Desfazendo alterações no Repositório Local| [Resumo](Resumos/Aula02.md)
+|Desfazendo Alterações no Repositório Local| [Resumo](Resumos/Aula02.md)
 
 <br>
 
