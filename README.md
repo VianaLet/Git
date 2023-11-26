@@ -5,7 +5,8 @@ Repositório para armazenar resumos sobre Git e GitHub do curso de Versionamento
 touch nome.extensão  # aqui é para criar um novo arquivo dentro da pasta onde o gitbash foi aberto
 
 ## 📚 Documentação
--[Documentação GitHub](https://docs.github.com/pt/get-started/writing-on-github)
+- [Documentação GitHub](https://docs.github.com/pt/get-started/writing-on-github)
+- [Documentação Git](https://docs.github.com/pt/get-started/quickstart/set-up-git)
 
 <br>
 
