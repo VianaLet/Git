@@ -3,56 +3,64 @@
 ## Tabela de Conteúdo
 | Tópicos | Comando |
 | ------  | ------- |
-|[Para iniciar um diretório no Git](#para-iniciar-um-diretório-no-git)| `git init` |
-| [Para criar novos documentos 📄](#para-criar-novos-documentos-📄)| `touch nome.extensão`
-|[Para criar pastas/diretórios 📂](#para-criar-pastasdiretórios-📂)| `mkdir nomepasta`|
+|[Iniciar um diretório no Git](#iniciar-um-diretório-no-git)| `git init` |
+| [Criar novos documentos 📄](#criar-novos-documentos-📄)| `touch nome.extensão`
+|[Criar pastas/diretórios 📂](#criar-pastasdiretórios-📂)| `mkdir nomepasta`|
 |[Adicionar documentos criados e modificados no git](#adicionar-documentos-já-criados-e-modificados-no-git)| `git add nome` <br> `git add .` |
-|[Como visualizar os status do diretório](#como-visualizar-os-status-do-diretório)| `git status` |
-|[Como visualizar todos os commits realizados 🔎](#como-visualizar-todos-os-commits-realizados-🔎)| `git log`
-|[Colocar um arquivo dentro do .gitignore](#colocar-um-arquivo-dentro-do-gitignore)| `echo nome/ > .gitignore`
+|[Visualizar os status do diretório](#visualizar-os-status-do-diretório)| `git status` |
+|[Visualizar todos os commits realizados 🔎](#visualizar-todos-os-commits-realizados-🔎)| `git log`
+|[Ignorar arquivos no .gitignore](#ignorar-arquivos-no-gitignore)| `echo nome/ > .gitignore`
 | [Criar uma nova branch/ramo](#criar-uma-nova-branch) | `git checkout -b nomedabranch`
 |[Mudar entre branches](#mudar-entre-branches)| `git checkout nomedabranch` |
-|[Saber quais são as branchs do diretório](#saber-quais-são-as-branchs-do-diretório) | `git branch`|
+|[Listar branchs do diretório](#listar-as-branchs-do-diretório) | `git branch`|
 
 <br>
 
-- ### Para iniciar um diretório no Git:
+- ### Iniciar um diretório no Git:
+     Este comando inicializa um repositório Git, criando a pasta oculta .git que armazena as configurações e histórico do projeto.
+
     ``` bash
     git init
     ```
-    Com esse comando o git vai criar uma pasta oculta chamada .git
+    
+
 
 <br>
 
-- ### Para criar novos documentos 📄
+- ### Criar novos documentos 📄
+    Utilize este comando para criar novos arquivos no projeto, como o README.MD para documentação.
+
     ```
     touch nome.extensão
-    Exemplos:
-    touch README.MD         touch Resumos/aula-01
+    # Exemplo: touch README.MD         touch Resumos/aula-01
     ```
 <br>
 
-- ### Para criar pastas/diretórios 📂
-    ```
+- ### Criar pastas/diretórios 📂
+    Crie novas pastas ou diretórios com este comando para organizar seu projeto de forma estruturada.
+
+    ``` bash
     mkdir nomedapasta
-        Exemplos:
-        mkdir Resumos       mkdir .gitinore
+        # Exemplo: mkdir Resumos       mkdir .gitinore
     ```
 <br>
 
 - ### Adicionar documentos já criados e modificados no git 
+     Adicione documentos ao controle de versão do Git para prepará-los para o próximo commit.
+
     ``` bash
     git add nomedodocumento
-    Exemplo:
-    git add README.MD
+     # Exemplo: git add README.MD
     ```
-    ```
-    git add .  //adicionar todos os documentos que foram inseridos ou modificados
+    ``` bash
+    git add .  # adiciona todos os documentos modificados ou inseridos
      ```
     
 <br>
 
-- ### Como visualizar os status do diretório 
+- ### Visualizar os status do diretório 
+    Este comando exibe o status das modificações no diretório, indicando arquivos não rastreados, modificados ou prontos para commit.
+
     ``` bash
     git status     
     ```
@@ -62,6 +70,7 @@
 <br>
 
 - ### Como visualizar todos os commits realizados 🔎 
+    Visualize todos os commits feitos até o momento, incluindo informações sobre autor, data e mensagem de commit.
     ``` bash
     git log     
     ```    
@@ -71,23 +80,28 @@
 
 <br>
 
-- ### Colocar um arquivo dentro do .gitignore 
+- ### Ignorar arquivos no .gitignore 
+    Utilize o .gitignore para especificar arquivos ou pastas a serem ignorados pelo Git, como arquivos temporários ou logs.
+
     ``` bash
     echo nomedapastaouarquivo/ > .gitignore
-        Exemplo:
-        echo Resumos/ > .gitignore
+        
+        # Exemplo: echo Resumos/ > .gitignore
     ```
 <br>
 
 - ### Criar uma nova branch
+    Crie e mude para uma nova branch com este comando, útil para desenvolver recursos isoladamente.
+
     ``` bash
     git checkout -b nomedabranch
-    Exemplo:
-    git checkout -b feature1
+        # Exemplo: git checkout -b feature1
     ```
 <br>
 
 - ### Mudar entre branches
+    Alterne entre branches existentes para trabalhar em diferentes partes do seu projeto.
+
     ```bash
     git checkout nomedabranch
     Exemplo:
@@ -95,8 +109,11 @@
     ```
 <br>
 
-- ### Saber quais são as branchs do diretório
+- ### Listar as branchs do diretório
+    Este comando lista todas as branches no diretório, indicando a branch atual com um asterisco.
+
     ```bash
     git branch
     ```
     <img src="../imagens/cmd-Git branch.PNG">
+
