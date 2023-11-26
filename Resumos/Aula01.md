@@ -50,7 +50,7 @@
     ```
     git status      (vai mostrar as pastas que foram modificadas e não foram inseridas, ou se não teve nenhuma modificação no diretório)
     ```
-     <img src="../imagens/cmd-Git status.PNG">
+     <img src="../imagens/Cmd-Git status.PNG">
 <br>
 
 - ### Como visualizar todos os commits realizados 🔎 
