@@ -10,7 +10,8 @@ touch nome.extensão  # aqui é para criar um novo arquivo dentro da pasta onde 
 ## 👩‍💻 Resumo das Aulas
 | Aulas | Resumos |
 | ----- | ------- |
-|Gravando Alterações no Repositório Local | [Resumo](Resumos/Aula01.md)
+|Gravando Alterações no Repositório Local | [Resumo](Resumos/Aula01.md) |
+|Desfazendo alterações no Repositório Local| 
 
 ``` bash 
     git init
