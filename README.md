@@ -15,6 +15,7 @@ Repositório para armazenar resumos sobre Git e GitHub do curso de Versionamento
 
 | Aulas | Resumos |
 | ----- | ------- |
+| Configurações Iniciais do Git|[Resumo](Resumos/Configuração-Inicial.md)|
 |Gravando Alterações no Repositório Local | [Resumo](Resumos/Aula01.md) |
 |Desfazendo Alterações no Repositório Local| [Resumo](Resumos/Aula02.md)
 
