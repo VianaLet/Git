@@ -15,7 +15,7 @@ touch nome.extensão  # aqui é para criar um novo arquivo dentro da pasta onde 
 | Aulas | Resumos |
 | ----- | ------- |
 |Gravando Alterações no Repositório Local | [Resumo](Resumos/Aula01.md) |
-|Desfazendo alterações no Repositório Local| 
+|Desfazendo alterações no Repositório Local| [Resumo](Resumos/Aula02.md)
 
 <br>
 
