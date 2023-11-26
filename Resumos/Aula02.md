@@ -4,48 +4,51 @@
 ## Tabela de Conteúdo
 | Tópicos | Comando |
 | ------  | ------- |
-| [Como remover a pasta .git](#como-remover-a-pasta-git)| `git remove -rf .git`|
-| [Como restaurar/ retornar ao último estado salvo do documento](#como-restaurar-retornar-ao-último-estado-salvo-do-documento)| `git retore nomearquivo"`|
-|[Como mudar o nome do último commit](#como-mudar-o-nome-do-último-commit)| `git commit --amend -m "novocomentário"`|
-|[Pegar os arquivos que estão no commit que queremos e adicionarmos na área de preparação](#pegar-os-arquivos-que-estão-no-commit-que-queremos-e-adicionarmos-na-área-de-preparação) | `git reset --soft númerodocommit`
+| [Remover a pasta .git](#remover-a-pasta-git)| `git remove -rf .git`|
+| [Restaurar/retornar ao último estado salvo do documento](#restaurar-retornar-ao-último-estado-salvo-do-documento)| `git restore nomearquivo"`|
+|[Mudar o nome do último commit](#mudar-o-nome-do-último-commit)| `git commit --amend -m "novocomentário"`|
+|[Pegar os arquivos do commit desejado e adicioná-los na área de preparação](#pegar-os-arquivos-do-commit-desejado-e-adicioná-los-na-área-de-preparação) | `git reset --soft númerodocommit`
 |[Visualizar o histórico de commits mais detalhadamente](#visualizar-o-histórico-de-commits-mais-detalhadamente)| `git reflog`
 
-- ### Como remover a pasta .git
+- ### Remover a pasta .git
     ``` bash
     git remove -rf .git
     ```
+    Este comando remove permanentemente o diretório .git, desfazendo completamente o controle de versão Git no repositório local.
+
 <br>
 
-- ### Como restaurar/ retornar ao último estado salvo do documento
-    Bom tomar certo cuidado, pois se tiverem alterações na área de staged atual que você queira permanecer, você irá perder pois o git vai retornar a versão anterior dessa, no caso o commit anterior
+- ### Restaurar/retornar ao último estado salvo do documento
     ``` bash
     git restore nomedoarquivo
     ```
+    Utilize este comando para desfazer as alterações no arquivo e retornar ao último estado salvo, revertendo as modificações não commitadas.
+
 <br>
 
-- ### Como mudar o nome do último commit
+- ### Mudar o nome do último commit
     <br>
 
-    Temos o último commit como "docs: upadate Aula01.md and images:
-
-    <img src="../imagens/ultimo commit.PNG">
-
-    Mas queremos mudar o que está escrito nesse commit então colocamos o seguinte código no terminal
+    Se você precisa modificar a mensagem do último commit, utilize o seguinte comando:
     ```bash
     git commit --amend -m "novo comentário"
     git commit --amend -m "docs: atualizando Aula01.md e imagens"
     ```
-    Vamos ver como fica:
-    
+    Este comando permite editar a mensagem do último commit, criando uma nova versão do commit com a mensagem ajustada.
+
     <img src="../imagens/cmd-Git commit --amend -m.PNG">
 
-- ### Pegar os arquivos que estão no commit que queremos e adicionarmos na área de preparação
-    Nessa ocasião estamos pegando o número aleatorio que o git cria para informar que queremos resetar o commit. Como tem o --soft ele vai tirar todas as pastas do commit e adicionar a nossa área de trabalho atual
+- ### Pegar os arquivos do commit desejado e adicioná-los na área de preparação
     ```bash
-    git reset --soft chavedocommit
+    git reset --soft númerodocommit
+        # git reset --soft 7b351722d8c5f3f0ce06673385bc605ce3461bb5
     ```
+    Utilize este comando para desfazer commits, mantendo as alterações na área de preparação. O "númerodocommit" é o identificador único do commit desejado.
+
 - ### Visualizar o histórico de commits mais detalhadamente
     ``` bash
     git reflog
     ```
+    Este comando exibe um log detalhado de todas as atividades do repositório, incluindo commits antigos e operações de desfazer.
+    
     <img src="../imagens/cmd-Git reflog.PNG">
