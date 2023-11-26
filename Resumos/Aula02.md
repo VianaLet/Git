@@ -36,6 +36,7 @@
     git commit --amend -m "docs: atualizando Aula01.md e imagens"
     ```
     Vamos ver como fica:
+    
     <img src="../imagens/cmd-Git commit --amend -m.PNG">
 
 - ### Pegar os arquivos que estão no commit que queremos e adicionarmos na área de preparação
