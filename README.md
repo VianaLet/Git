@@ -4,12 +4,18 @@ Repositório para armazenar resumos sobre Git e GitHub do curso de Versionamento
 
 <br>
 
+----
+
 ## 📚 Documentação
 - [Documentação GitHub](https://docs.github.com/pt/get-started/writing-on-github)
 - [Documentação Git](https://docs.github.com/pt/get-started/quickstart/set-up-git)
 
+## Ferramentas 🛠
+[![Git](https://img.shields.io/badge/Git-000?style=for-the-badge&logo=git&logoColor=E94D5F)](https://git-scm.com/doc)
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=30A3DC)](https://docs.github.com/)
 <br>
 
+---
 ## 👩‍💻 Resumo das Aulas
 <br>
 
@@ -18,6 +24,7 @@ Repositório para armazenar resumos sobre Git e GitHub do curso de Versionamento
 | Configurações Iniciais do Git|[Resumo](Resumos/Configuração-Inicial.md)|
 |Gravando Alterações no Repositório Local | [Resumo](Resumos/Aula01.md) |
 |Desfazendo Alterações no Repositório Local| [Resumo](Resumos/Aula02.md)
+|Enviando e Baixando Alterações com o Repositório Remoto| [Resumo](Resumos/Aula03.md)|
 
 <br>
 
