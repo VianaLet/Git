@@ -2,7 +2,7 @@
 
 ## Tabela de Conteúdo
 | Tópicos | Comando |
-| ------  | ------- |
+| ------  | :-------: |
 |[Iniciar um diretório no Git](#iniciar-um-diretório-no-git)| `git init` |
 | [Criar novos documentos 📄](#criar-novos-documentos-📄)| `touch nome.extensão`
 |[Criar pastas/diretórios 📂](#criar-pastasdiretórios-📂)| `mkdir nomepasta`|
@@ -11,8 +11,11 @@
 |[Visualizar todos os commits realizados 🔎](#visualizar-todos-os-commits-realizados-🔎)| `git log`
 |[Ignorar arquivos no .gitignore](#ignorar-arquivos-no-gitignore)| `echo nome/ > .gitignore`
 | [Criar uma nova branch/ramo](#criar-uma-nova-branch) | `git checkout -b nomedabranch`
+|[Remover uma branch](#remover-uma-branch)|`git -d nomedabranch`|
 |[Mudar entre branches](#mudar-entre-branches)| `git checkout nomedabranch` |
+|[Visualizar o último commit de cada branch](#visualizar-o-último-commit-de-cada-branch)| `git branch -v`
 |[Listar branchs do diretório](#listar-as-branchs-do-diretório) | `git branch`|
+|[Mesclar branches](#mesclar-branches)|`git merge nome da branch`|
 
 <br>
 
@@ -99,6 +102,17 @@
     ```
 <br>
 
+### Remover uma branch
+Remova uma branch que já foi completamente mesclada com a branch principal (geralmente "master").
+
+    ```bash
+    git branch -d nomedabranch
+    ```
+    Substitua "nomedabranch" pelo nome da branch que deseja excluir.
+
+<br>
+
+
 - ### Mudar entre branches
     Alterne entre branches existentes para trabalhar em diferentes partes do seu projeto.
 
@@ -109,11 +123,33 @@
     ```
 <br>
 
+### Visualizar o último commit de cada branch
+Visualize o último commit de cada branch no diretório.
+
+    ```bash
+    git branch -v
+    ```
+Isso fornecerá informações sobre o último commit em cada branch, incluindo o hash do commit, a mensagem e a data.
+
+<br>
+
 - ### Listar as branchs do diretório
     Este comando lista todas as branches no diretório, indicando a branch atual com um asterisco.
 
     ```bash
     git branch
     ```
+
     <img src="../imagens/cmd-Git branch.PNG">
 
+<br>
+
+
+### Mesclar branches
+Mesclar alterações de uma branch para outra, por exemplo, para incorporar as alterações de uma feature branch de volta para a branch principal.
+
+    ```bash
+    git merge nome-da-branch
+    ```
+
+Substitua "nome-da-branch" pelo nome da branch que você deseja mesclar com a branch atual.
